@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e1b4b, #6b21a8, #db2777);
+    color: white;
+    min-height: 100vh; /* Se mantiene igual */
+    padding: 0; /* 20px a vh y vw */
+}
+
+.container {
+    max-width: 1200px; /* Se mantiene igual */
+    margin: 0 auto;
+    padding: 2vh 2vw; /* 20px a vh y vw */
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 5vh; /* 50px a vh */
+}
+
+.header h1 {
+    font-size: 4vw; /* Aproximado, ajusta según sea necesario */
+    margin: 0;
+    letter-spacing: -0.2vw; /* Aproximado, ajusta según sea necesario */
+}
+
+.header p {
+    color: #e9d5ff;
+    font-size: 1.2vw; /* Aproximado, ajusta según sea necesario */
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr)); /* 250px a vw */
+    gap: 2vw; /* 20px a vw */
+    margin-bottom: 4vh; /* 40px a vh */
+}
+
+.service-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 1.5vw; /* 15px a vw */
+    padding: 2vh; /* 20px a vh */
+    position: relative;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.service-card:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-0.5vh); /* 5px a vh */
+}
+
+.feature-badge {
+    position: absolute;
+    top: 1.5vh; /* 15px a vh */
+    right: 1.5vw; /* 15px a vw */
+    padding: 0.5vh 1.5vw; /* 5px 15px a vh y vw */
+    border-radius: 2vw; /* 20px a vw */
+    font-size: 0.875vw; /* Aproximado, ajusta según sea necesario */
+}
+
+.badge-premium {
+    background-color: #FF6B6B;
+    color: white;
+}
+
+.badge-free {
+    background-color: #e9d5ff;
+    color: #4c1d95;
+}
+
+.service-title {
+    font-size: 1.25vw; /* Aproximado, ajusta según sea necesario */
+    font-weight: bold;
+    margin: 1.5vh 0; /* 15px a vh */
+}
+
+.service-description {
+    color: #e9d5ff;
+    font-size: 0.95vw; /* Aproximado, ajusta según sea necesario */
+    line-height: 1.5;
+}
+
+.cta-section {
+    text-align: center;
+    margin-top: 4vh; /* 40px a vh */
+}
+
+.cta-button {
+    background-color: #FF6B6B;
+    color: white;
+    border: none;
+    padding: 1.5vh 3vw; /* 15px 30px a vh y vw */
+    border-radius: 2.5vw; /* 25px a vw */
+    font-size: 1.1vw; /* Aproximado, ajusta según sea necesario */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #FF5252;
+}
+
+.cta-text {
+    color: #e9d5ff;
+    margin-top: 1.5vh; /* 15px a vh */
+    font-size: 0.95vw; /* Aproximado, ajusta según sea necesario */
+}
